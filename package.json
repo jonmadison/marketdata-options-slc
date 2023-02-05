@@ -1,0 +1,21 @@
+{
+  "name": "slc",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "stoploss": "./bin/index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.2",
+    "tda-api-client": "^2.1.3",
+    "yargs": "^17.6.2"
+  }
+}
