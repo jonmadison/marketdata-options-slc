@@ -38,7 +38,6 @@ yargs(hideBin(process.argv))
 
 (async () => {
   try {
-    console.log(argv.r)
     let c = await slc(argv._[0], argv.d, argv.e, argv.s, argv.r);
     console.log(JSON.stringify(c, null, 2));
   } catch (e) {
