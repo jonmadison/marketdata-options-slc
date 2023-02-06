@@ -44,7 +44,7 @@ yargs(hideBin(process.argv))
   .option("target", {
     type: "number",
   })
-  .option("debug", {
+  .option("verbose", {
     type: "boolean",
   })
   .demandOption(["c", "s", "e"])
@@ -71,7 +71,7 @@ yargs(hideBin(process.argv))
         argv.price,
         argv.stop,
         argv.target,
-        argv.debug
+        argv.verbose
       );
       console.log(JSON.stringify(c, null, 2));
     } catch (e) {
@@ -85,7 +85,7 @@ yargs(hideBin(process.argv))
         argv.e || argv.expiration,
         argv.s || argv.strike,
         argv.r || argv.ratio,
-        argv.debug
+        argv.verbose
       );
       console.log(JSON.stringify(c, null, 2));
     } catch (e) {
